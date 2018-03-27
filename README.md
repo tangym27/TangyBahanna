@@ -1,4 +1,9 @@
 # TangyBahanna
+
+## personnel
+Michelle Tang
+Hanna Yang
+
 ## statement of problem
 what is the Boolean value of the statement “it is possible to get from the starting
 position to treasure”
