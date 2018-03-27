@@ -1,7 +1,7 @@
 # TangyBahanna
 
 ## personnel
-Michelle Tang
+Michelle Tang\
 Hanna Yang
 
 ## statement of problem
@@ -13,7 +13,7 @@ position to treasure”
 When I am asked to\
 	determine the Boolean value of the statement “it is possible to get from the starting position to treasure"\
 The recursive abstraction can\
-determine the Boolean value of the statement “it is possible to get from the starting  \
+	determine the Boolean value of the statement “it is possible to get from a position with one less choice than the starting positon to the treasure"\
 
 Hanna's Version:\
 When I am asked to
