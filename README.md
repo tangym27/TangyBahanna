@@ -13,11 +13,10 @@ position to treasure”
 When I am asked to\
 	determine the Boolean value of the statement “it is possible to get from the starting position to treasure"\
 The recursive abstraction can\
-determine the Boolean value of the statement “it is possible to get from the starting\
-	
+determine the Boolean value of the statement “it is possible to get from the starting  \
 
 Hanna's Version:\
-When I am asked to\
+When I am asked to
   find a path to the end of the maze beginning on this “stepping stone on a legit path,”\
 The recursive abstraction can\
   find a path to the end of the maze beginning on a “stepping stone on a legit path” next to the one that I was asked to find\
