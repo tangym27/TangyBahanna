@@ -25,7 +25,9 @@ When I am asked to find a solution for the explorer to
 find the treasure in a path with n choices, the recursion
 abstraction can find a solution for the explorer to find the
 treasure in a path with n-1 choices
-
+## base case
+## English or pseudocode description of algorithm
+## class(es), with fields and methods
 ## version n wishlist
 - one possible way
 - all possible ways
