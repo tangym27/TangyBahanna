@@ -18,14 +18,14 @@ The recursive abstraction can\
 e is "right before" 0 OR there are no choices
 ## English or pseudocode description of algorithm
 If e is "right before" 0\
-	Return true\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return true\
 Else if numbers of choices for the "forwards direction" is 0\
-	Return false\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return false\
 Else \
-	For each possible "forwards direction"\
-		Move e in the "forwards direction"\
-		Invoke recursive abstraction\
-	Move e back
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For each possible "forwards direction"\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move e in the "forwards direction"\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Invoke recursive abstraction\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move e back
 ## class(es), with fields and methods
 ## version n wishlist
 - one possible way
