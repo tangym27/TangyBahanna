@@ -13,20 +13,21 @@ position to treasure”
 When I am asked to\
 	determine the Boolean value of the statement “it is possible to get from the starting position to treasure"\
 The recursive abstraction can\
-	determine the Boolean value of the statement “it is possible to get from a position with one less choice than the starting positon to the treasure"
+	determine the Boolean value of the statement “it is possible to get from a position with one fewer choice than the starting positon to the treasure"
 ## base case
 e is on the treasure -- true
-e is on a wall -- false
+e is on a wall -- return to recursive abstraction 
 ## English or pseudocode description of algorithm
-If e is "right before" 0\
+If e is on treasure\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return true\
-Else if numbers of choices for the "forwards direction" is 0\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return false\
+Else if e is on a wall\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return \
 Else \
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For each possible "forwards direction"\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move e in the "forwards direction"\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For each possible direction\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move e in the direction\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Invoke recursive abstraction\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Move e back
+&nbsp;&nbsp;&nbsp;&nbsp;return false
 ## class(es), with fields and methods
 ## version n wishlist
 - one possible way
