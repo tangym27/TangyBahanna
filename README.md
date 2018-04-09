@@ -15,7 +15,8 @@ When I am asked to\
 The recursive abstraction can\
 	determine the Boolean value of the statement “it is possible to get from a position with one less choice than the starting positon to the treasure"
 ## base case
-e is "right before" 0 OR there are no choices
+e is on the treasure -- true
+e is on a wall -- false
 ## English or pseudocode description of algorithm
 If e is "right before" 0\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return true\
