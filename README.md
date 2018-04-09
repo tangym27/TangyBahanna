@@ -15,7 +15,7 @@ When I am asked to\
 The recursive abstraction can\
 	determine the Boolean value of the statement “it is possible to get from a position next to the previous position to the starting positon to the treasure"
 ## base case
-e is on the treasure -- true\ 
+e is on the treasure -- true\
 e is on a wall -- false
 ## English or pseudocode description of algorithm
 If e is on treasure\
@@ -26,8 +26,9 @@ Else \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For each possible direction\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Move e in the direction\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if wall\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;move e back\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else Invoke recursive abstraction\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;move e back\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Invoke recursive abstraction\
 &nbsp;&nbsp;&nbsp;&nbsp;return false
 ## class(es), with fields and methods
 ## version n wishlist
