@@ -1,39 +1,33 @@
-/**
-  Test Maze class.
-
+/***************************
+ ***************************
+ ****** USEROFMAZE *********
+ ***************************
+ ***************************
   Requires command line arguments:
   o  the name of a file containing a maze.
   o  the rank and file where an explorer is starting
-
   For example,
       java UserOfMaze mazes/4cell_treasureWest.txt -1 -1  # no explorer
  */
 
 public class UserOfMaze {
     private static Displayer displayer;
-
     public static void main(String[] commandLine)
        throws java.io.FileNotFoundException {
         System.out.println();
-
         Maze maze = new Maze( commandLine[0]
                             , Integer.parseInt( commandLine[1])
                             , Integer.parseInt( commandLine[2])
                             );
         System.out.println( maze + System.lineSeparator());
-
         // moveTest( maze);
         // dropTest( maze);
-
         // copyConstructTest( maze);
-
         // // test Displayer
         // displayer = new Displayer( Integer.parseInt( commandLine[3]));
         // displayerTest( maze);
-
-        // snapshotDemo( maze);
+        snapshotDemo( maze);
     }
-
 
     /**
       Move around a maze. Check the results.
@@ -101,7 +95,6 @@ public class UserOfMaze {
       from the original.
       Run using a shell command like...
           java UserOfMaze mazes/intersection_treasureNorth.txt 1 1
-
      */
     private static void copyConstructTest( Maze old) {
         Maze copy = new Maze( old);
@@ -156,24 +149,26 @@ public class UserOfMaze {
 
         Maze snapshot;
 
-        throw new java.lang.RuntimeException(
-            "Write code to take a snapshot of @candidate. "
-          + "Then, in @candidate, have the explorer go() out of the maze.");
+        // throw new java.lang.RuntimeException(
+        //     "Write code to take a snapshot of @candidate. "
+        //   + "Then, in @candidate, have the explorer go() out of the maze.");
+        snapshot = new Maze(candidate);
+        candidate.go(Maze.NORTH);
 
-        // System.out.println(
-                            // "modified candidate with no explorer"
-                          // + System.lineSeparator()
-                          // + candidate + System.lineSeparator()
-                          // + "unchanged snapshot" + System.lineSeparator()
-                          // + snapshot + System.lineSeparator()
-                          // );
+        System.out.println(
+                        
+          "modified candidate with no explorer"
+                          + System.lineSeparator()
+                          + candidate + System.lineSeparator()
+                          + "unchanged snapshot" + System.lineSeparator()
+                          + snapshot + System.lineSeparator()
+                          );
 
         /* Expecting...
               modified candidate with no explorer
               ------
               |0** |
               ------
-
               unchanged snapshot
               ------
               |0e* |
@@ -183,12 +178,12 @@ public class UserOfMaze {
         // throw new java.lang.RuntimeException(
             // "Write code to undo the go() by making @candidate refer "
           // + "to an unchanged copy of the maze.");
-
-        // System.out.println(
-                            // "restored candidate, with an explorer"
-                          // + System.lineSeparator()
-                          // + candidate + System.lineSeparator()
-                          // );
+        candidate = new Maze(snapshot);
+        System.out.println(
+                            "restored candidate, with an explorer"
+                          + System.lineSeparator()
+                          + candidate + System.lineSeparator()
+                          );
         /* Expecting...
               restored candidate, with an explorer
               ------
