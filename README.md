@@ -26,7 +26,7 @@ Else \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Drop wall\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For each possible direction\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Move e in the direction\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; invoke recursive abtraction
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; invoke recursive abtraction\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; move e back (go back to snapshot)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return false
 ## class(es), with fields and methods
