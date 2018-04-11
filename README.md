@@ -23,7 +23,7 @@ If e is on treasure\
 Else if e is on a wall\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return false \
 Else \
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Drop wall\s
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Drop wall\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For each possible direction\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Move e in the direction\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; invoke recursive abtraction
