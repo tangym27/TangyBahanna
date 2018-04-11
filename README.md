@@ -21,15 +21,15 @@ e is on a wall -- false
 If e is on treasure\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return true\
 Else if e is on a wall\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return \
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return false \
 Else \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For each possible direction\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Move e in the direction\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if wall\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;move e back\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Invoke recursive abstraction\
-&nbsp;&nbsp;&nbsp;&nbsp;return false
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (invoke recursion abstraction)\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return true\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; place wall\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; move e back\
+&nbsp;&nbsp;&nbsp;&nbsp;return false\
 ## class(es), with fields and methods
 ## version n wishlist
 - one possible way
