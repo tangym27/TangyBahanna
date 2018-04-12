@@ -1,9 +1,28 @@
+/*
+* USER OF MAZE SOLVER
+* here we will be testing to make sure that the maze solver works for the 
+* 0. base case
+* 1. small recursive case
+* 2. big recursive case 
+*/ 
 public class UserOfMazeSolver { 
 
     public static void main( String[] args) {
         Maze maze = new Maze( commandLine[0]
-                            , Integer.parseInt( commandLine[1])
-                            , Integer.parseInt( commandLine[2])
+                            , Integer.parseInt( commandLine[1]) // explorer positions
+                            , Integer.parseInt( commandLine[2]) // explorer positions
                             );
+      	baseTest(maze);
+    }
+  	
+    /**
+      run one test
+      base case for treasure: 
+      java UserOfMazeSolver maze/justTreasure.txt 1 1
+      base case for wall:
+      java UserOfMazeSolver maze/justWall.txt 1 1
+     */
+    private static void baseTest (Maze maze){
+      System.out.println(MazeSolver.solve(maze));
     }
 }
