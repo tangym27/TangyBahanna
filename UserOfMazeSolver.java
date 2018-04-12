@@ -7,11 +7,12 @@
 */ 
 public class UserOfMazeSolver { 
 
-    public static void main( String[] args) {
+    public static void main( String[] commandLine) {
         Maze maze = new Maze( commandLine[0]
                             , Integer.parseInt( commandLine[1]) // explorer positions
                             , Integer.parseInt( commandLine[2]) // explorer positions
                             );
+        
       	baseTest(maze);
     }
   	

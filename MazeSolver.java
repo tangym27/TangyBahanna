@@ -19,14 +19,14 @@ public class MazeSolver {
     
     else { 
     // Else 
-    	explorer.drop
+        //explorer.drop
     //        Drop wall
     //        For each possible direction
     //          Move e in the direction
     //          invoke recursive abtraction
     //          move e back (go back to snapshot)
     //       return false
-      
+        return false;      
     }
   }
     //       Return false
