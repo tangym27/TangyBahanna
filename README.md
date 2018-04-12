@@ -6,7 +6,7 @@ Hanna Yang
 
 ## statement of problem
 what is the Boolean value of the statement “it is possible to get from the starting
-position to treasure”
+position to treasure?”
 
 ## recursive abstraction
 
@@ -29,20 +29,20 @@ e is on a wall -- false
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Move e in the direction\
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if the maze cannot be solved ( via an invocation of the recursive abtraction)\
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; move e back (go back to snapshot)\
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if the maze can be solved
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if the maze can be solved\
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return true :)\
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return false
 ## class(es), with fields and methods
-To add with clarity, each name is accompanied with  
+To aid with clarity, each name is accompanied with  
 * its access (i.e. public/private/protected)
 * whether it is static or non-static 
 ### Displayer
 ##### Fields
-> windowHeight (private)\
-> console (private)
+> windowHeight (private & non-static)\
+> console (private & non-static)
 ##### Methods
-> atTopOfWindow (public)\
-> lineSeparatorsIn (private)
+> atTopOfWindow (public & non-static)\
+> lineSeparatorsIn (private & static)
 ### Maze
 ##### Fields
 > TREASURE (public & static)\
