@@ -40,7 +40,8 @@ void dropA( int mazeElement)
 int explorerIsOnA()
 Maze Solver:
 static boolean solve(Maze maze)
-
+## known bugs
+only works for the base case so far.
 ## version n wishlist
 - one possible way
 - all possible ways
