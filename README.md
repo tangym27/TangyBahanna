@@ -31,15 +31,15 @@ Else \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return false
 ## class(es), with fields and methods
 Maze:
-final static int TREASURE
-final static int WALL
-final static int STEPPING_STONE
-final static int EAST, NORTH, WEST, SOUTH
-void go( int direction)
-void dropA( int mazeElement)
-int explorerIsOnA()
-Maze Solver:
-static boolean solve(Maze maze)
+final static int TREASURE\
+final static int WALL\
+final static int STEPPING_STONE\
+final static int EAST, NORTH, WEST, SOUTH\
+void go( int direction)\
+void dropA( int mazeElement)\
+int explorerIsOnA()\
+Maze Solver:\
+static boolean solve(Maze maze)\
 ## known bugs
 only works for the base case so far.
 ## version n wishlist
