@@ -30,6 +30,17 @@ Else \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; move e back (go back to snapshot)\
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return false
 ## class(es), with fields and methods
+Maze:
+final static int TREASURE
+final static int WALL
+final static int STEPPING_STONE
+final static int EAST, NORTH, WEST, SOUTH
+void go( int direction)
+void dropA( int mazeElement)
+int explorerIsOnA()
+Maze Solver:
+static boolean solve(Maze maze)
+
 ## version n wishlist
 - one possible way
 - all possible ways
