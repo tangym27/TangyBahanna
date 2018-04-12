@@ -22,8 +22,9 @@ public class MazeSolver {
     // Else 
     else { 
       //        Drop wall
-      maze.dropA( Maze.WALL);
-      Maze snapshot = new Maze( maze);
+	maze.dropA( Maze.WALL);
+	Maze snapshot = new Maze( maze);
+     
       //        For each possible direction
     //          Move e in the direction
     //          invoke recursive abtraction
@@ -32,18 +33,23 @@ public class MazeSolver {
       if ( !solve(maze)) {
         maze = new Maze(snapshot);
       }
+      else return true;
       maze.go( Maze.EAST);
       if ( !solve(maze)) {
         maze = new Maze(snapshot);
       }
+      else return true;
       maze.go( Maze.SOUTH);
       if ( !solve(maze)) {
         maze = new Maze(snapshot);
       }
+      else return true;
       maze.go( Maze.WEST);
       if ( !solve(maze)) {
         maze = new Maze(snapshot);
       }
+      else return true;
+
     //       return false
     return false;
     }
