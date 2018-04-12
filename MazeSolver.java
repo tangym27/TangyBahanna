@@ -8,25 +8,31 @@ public class MazeSolver {
   public static boolean solve( Maze maze) {
     // BASE CASE 
     // If e is on treasure
-    if ( maze.explorerIsOnA() = Maze.TREASURE) {  
+    if ( maze.explorerIsOnA() == Maze.TREASURE) {  
       //       Return true 
       return true;
     }
     // Else if e is on a wall
-    else if ( maze.explorerIsOnA() = Maze.WALL) {
+    else if ( maze.explorerIsOnA() == Maze.WALL) {
       return false;
-    }
-  }
-    //       Return false
+    } 
     
-    
+    else { 
     // Else 
+    	explorer.drop
     //        Drop wall
     //        For each possible direction
     //          Move e in the direction
     //          invoke recursive abtraction
     //          move e back (go back to snapshot)
     //       return false
+      
+    }
+  }
+    //       Return false
+    
+    
+    
 }
 
 /* FIELDS:
