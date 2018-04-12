@@ -1,6 +1,6 @@
 /*
 * MAZE SOLVER
-* static solve method aims to provide an answer to the question: what is the Boolean value of the statement “it is possible to get from the starting position to treasure”
+* static solve method aims to provide an answer to the question: what is the Boolean value of the statement âit is possible to get from the starting position to treasureâ
 */
 public class MazeSolver {
   
@@ -10,6 +10,7 @@ public class MazeSolver {
     // If e is on treasure
     if ( maze.explorerIsOnA() == Maze.TREASURE) {  
       //       Return true 
+      System.out.println( "Explorer is on Treasure");
       return true;
     }
     // Else if e is on a wall
@@ -21,21 +22,21 @@ public class MazeSolver {
     else { 
       //        Drop wall
       Maze snapshot = new Maze( maze);
-    	explorer.dropA( Maze.WALL);
+    	maze.dropA( Maze.WALL);
       //        For each possible direction
     //          Move e in the direction
     //          invoke recursive abtraction
     //          move e back (go back to snapshot)
-      explorer.go( Maze.NORTH);
+      maze.go( Maze.NORTH);
       solve(maze);
       maze = new Maze(snapshot);
-      explorer.go( Maze.EAST);
+      maze.go( Maze.EAST);
       solve(maze);
       maze = new Maze(snapshot);
-      explorer.go( Maze.SOUTH);
+      maze.go( Maze.SOUTH);
       solve(maze);
       maze = new Maze(snapshot);
-      explorer.go( Maze.WEST);
+      maze.go( Maze.WEST);
       solve(maze);
       maze = new Maze(snapshot);
     //       return false
