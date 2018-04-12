@@ -13,7 +13,7 @@ position to treasure?”
 >When I am asked to\
 >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;determine the Boolean value of the statement “it is possible to get from the starting position to treasure"\
 >The recursive abstraction can\
->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;determine the Boolean value of the statement “it is possible to get from a position next to the previous position to the starting positon to the treasure"
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;determine the Boolean value of the statement “it is possible to get from a position next to the explorer's current position to the treasure."
 ## base case
 e is on the treasure -- true\
 e is on a wall -- false
