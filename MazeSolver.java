@@ -21,8 +21,8 @@ public class MazeSolver {
     // Else 
     else { 
       //        Drop wall
+      maze.dropA( Maze.WALL);
       Maze snapshot = new Maze( maze);
-    	maze.dropA( Maze.WALL);
       //        For each possible direction
     //          Move e in the direction
     //          invoke recursive abtraction
