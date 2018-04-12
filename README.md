@@ -79,10 +79,12 @@ To aid with clarity, each name is accompanied with
 > snapshotDemo (private & static)
 ### MazeSolver
 ##### Fields
+null
 ##### Methods
 > solve (public & static)
 ### UserOfMazeSolver
 ##### Fields
+null
 ##### Methods
 > main (public & static)\
 > baseTest (private & static)
