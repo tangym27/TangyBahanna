@@ -1,6 +1,6 @@
 /*
 * MAZE SOLVER
-* static solve method aims to provide an answer to the question: what is the Boolean value of the statement âit is possible to get from the starting position to treasureâ
+* static solve method aims to provide an answer to the question: what is the Boolean value of the statement “it is possible to get from the starting position to treasure”
 */
 public class MazeSolver {
   
@@ -17,9 +17,29 @@ public class MazeSolver {
       return false;
     } 
     
+    // Else 
     else { 
-   
-        return false;      
+      //        Drop wall
+      Maze snapshot = new Maze( maze);
+    	explorer.dropA( Maze.WALL);
+      //        For each possible direction
+    //          Move e in the direction
+    //          invoke recursive abtraction
+    //          move e back (go back to snapshot)
+      explorer.go( Maze.NORTH);
+      solve(maze);
+      maze = new Maze(snapshot);
+      explorer.go( Maze.EAST);
+      solve(maze);
+      maze = new Maze(snapshot);
+      explorer.go( Maze.SOUTH);
+      solve(maze);
+      maze = new Maze(snapshot);
+      explorer.go( Maze.WEST);
+      solve(maze);
+      maze = new Maze(snapshot);
+    //       return false
+    return false;
     }
   }
     //       Return false

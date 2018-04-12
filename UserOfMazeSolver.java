@@ -19,9 +19,9 @@ public class UserOfMazeSolver {
     /**
       run one test
       base case for treasure: 
-      java UserOfMazeSolver mazes/justTreasure.txt 1 1
+      java UserOfMazeSolver mazes/justTreasure.txt 0 0
       base case for wall:
-      java UserOfMazeSolver mazes/justWall.txt 1 1
+      java UserOfMazeSolver mazes/justWall.txt 0 0
      */
     private static void baseTest (Maze maze){
       System.out.println(MazeSolver.solve(maze));
