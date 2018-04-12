@@ -35,56 +35,56 @@ e is on a wall -- false
 To add with clarity, each name is accompanied with  
 * its access (i.e. public/private/protected)
 * whether it is static or non-static 
-#### Displayer
+### Displayer
 ##### Fields
-> windowHeight (private)
-> console (private)
+> windowHeight (private)\
+> console (private)\
 ##### Methods
-> atTopOfWindow (public)
-> lineSeparatorsIn (private)
-#### Maze
+> atTopOfWindow (public)\
+> lineSeparatorsIn (private)\
+### Maze
 ##### Fields
-> TREASURE (public & static)
-> WALL (public & static)
-> STEPPING_STONE  (public & static)
-> EAST (public & static)
-> NORTH (public & static)
-> WEST (public & static)
-> SOUTH (public & static)
-> maze (private & non-static)
-> MAX_RANKS (private & static)
-> explorerPosition (private & non-static)
+> TREASURE (public & static)\
+> WALL (public & static)\
+> STEPPING_STONE  (public & static)\
+> EAST (public & static)\
+> NORTH (public & static)\
+> WEST (public & static)\
+> SOUTH (public & static)\
+> maze (private & non-static)\
+> MAX_RANKS (private & static)\
+> explorerPosition (private & non-static)\
 ##### Methods
-> toString (public & non-static)
-> go (public & non-static)
-> dropA (public & non-static)
-> explorerIsOnA (public & non-static)
-###### Vector (Private Class Within Maze)
+> toString (public & non-static)\
+> go (public & non-static)\
+> dropA (public & non-static)\
+> explorerIsOnA (public & non-static)\
+### Vector (Private Class Within Maze)
 ##### Fields
-> rank (private & non-static)
-> file (private & non-static)
+> rank (private & non-static)\
+> file (private & non-static)\
 ##### Methods
-> add (private & non-static)
-> equals (private & non-static)
-#### UserOfMaze
+> add (private & non-static)\
+> equals (private & non-static)\
+### UserOfMaze
 ##### Fields
-> displayer (private & static)
+> displayer (private & static)\
 ##### Methods
-> main (public & static) 
-> moveTest (private & static)
-> dropTest (private & static)
-> copyConstructTest (private & static)
-> displayerTest (private & static)
-> snapshotDemo (private & static)
-#### MazeSolver
-##### Fields
-##### Methods
-> solve (public & static)
-#### UserOfMazeSolver
+> main (public & static)\
+> moveTest (private & static)\
+> dropTest (private & static)\
+> copyConstructTest (private & static)\
+> displayerTest (private & static)\
+> snapshotDemo (private & static)\
+### MazeSolver
 ##### Fields
 ##### Methods
-> main (public & static)
-> baseTest (private & static)
+> solve (public & static)\
+### UserOfMazeSolver
+##### Fields
+##### Methods
+> main (public & static)\
+> baseTest (private & static)\
 
 ## known bugs
 the displayer does not work
