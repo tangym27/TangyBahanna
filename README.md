@@ -18,32 +18,77 @@ The recursive abstraction can\
 e is on the treasure -- true\
 e is on a wall -- false
 ## English or pseudocode description of algorithm
-If e is on treasure\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return true\
-Else if e is on a wall\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return false \
-Else \
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Drop wall\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; take a snapshot\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For each possible direction\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Move e in the direction\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if the maze cannot be solved ( via an invocation of the recursive abtraction)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; move e back (go back to snapshot)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if the maze can be solved, return true :)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return false
+> If e is on treasure\
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return true\
+> Else if e is on a wall\
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return false \
+> Else \
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Drop wall\
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; take a snapshot\
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For each possible direction\
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Move e in the direction\
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if the maze cannot be solved ( via an invocation of the recursive abtraction)\
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; move e back (go back to snapshot)\
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if the maze can be solved, return true :)\
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return false
 ## class(es), with fields and methods
-Maze:
-final static int TREASURE\
-final static int WALL\
-final static int STEPPING_STONE\
-final static int EAST, NORTH, WEST, SOUTH\
-void go( int direction)\
-void dropA( int mazeElement)\
-int explorerIsOnA()\
-Maze Solver:\
-static boolean solve(Maze maze)\
+To add with clarity, each name is accompanied with  
+* its access (i.e. public/private/protected)
+* whether it is static or non-static 
+#### Displayer
+##### Fields
+> windowHeight (private)
+> console (private)
+##### Methods
+> atTopOfWindow (public)
+> lineSeparatorsIn (private)
+#### Maze
+##### Fields
+> TREASURE (public & static)
+> WALL (public & static)
+> STEPPING_STONE  (public & static)
+> EAST (public & static)
+> NORTH (public & static)
+> WEST (public & static)
+> SOUTH (public & static)
+> maze (private & non-static)
+> MAX_RANKS (private & static)
+> explorerPosition (private & non-static)
+##### Methods
+> toString (public & non-static)
+> go (public & non-static)
+> dropA (public & non-static)
+> explorerIsOnA (public & non-static)
+###### Vector (Private Class Within Maze)
+##### Fields
+> rank (private & non-static)
+> file (private & non-static)
+##### Methods
+> add (private & non-static)
+> equals (private & non-static)
+#### UserOfMaze
+##### Fields
+> displayer (private & static)
+##### Methods
+> main (public & static) 
+> moveTest (private & static)
+> dropTest (private & static)
+> copyConstructTest (private & static)
+> displayerTest (private & static)
+> snapshotDemo (private & static)
+#### MazeSolver
+##### Fields
+##### Methods
+> solve (public & static)
+#### UserOfMazeSolver
+##### Fields
+##### Methods
+> main (public & static)
+> baseTest (private & static)
+
 ## known bugs
-only works for the base case so far.
+the displayer does not work
+
 ## version n wishlist
 - one possible way
 - all possible ways
