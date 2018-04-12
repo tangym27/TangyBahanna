@@ -10,10 +10,10 @@ position to treasure”
 
 ## recursive abstraction
 
-When I am asked to\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;determine the Boolean value of the statement “it is possible to get from the starting position to treasure"\
-The recursive abstraction can\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;determine the Boolean value of the statement “it is possible to get from a position next to the previous position to the starting positon to the treasure"
+>When I am asked to\
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;determine the Boolean value of the statement “it is possible to get from the starting position to treasure"\
+>The recursive abstraction can\
+>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;determine the Boolean value of the statement “it is possible to get from a position next to the previous position to the starting positon to the treasure"
 ## base case
 e is on the treasure -- true\
 e is on a wall -- false
@@ -26,10 +26,11 @@ e is on a wall -- false
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Drop wall\
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; take a snapshot\
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For each possible direction\
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Move e in the direction\
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if the maze cannot be solved ( via an invocation of the recursive abtraction)\
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; move e back (go back to snapshot)\
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if the maze can be solved, return true :)\
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Move e in the direction\
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if the maze cannot be solved ( via an invocation of the recursive abtraction)\
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; move e back (go back to snapshot)\
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if the maze can be solved
+> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return true :)\
 > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return false
 ## class(es), with fields and methods
 To add with clarity, each name is accompanied with  
@@ -38,10 +39,10 @@ To add with clarity, each name is accompanied with
 ### Displayer
 ##### Fields
 > windowHeight (private)\
-> console (private)\
+> console (private)
 ##### Methods
 > atTopOfWindow (public)\
-> lineSeparatorsIn (private)\
+> lineSeparatorsIn (private)
 ### Maze
 ##### Fields
 > TREASURE (public & static)\
@@ -53,38 +54,38 @@ To add with clarity, each name is accompanied with
 > SOUTH (public & static)\
 > maze (private & non-static)\
 > MAX_RANKS (private & static)\
-> explorerPosition (private & non-static)\
+> explorerPosition (private & non-static)
 ##### Methods
 > toString (public & non-static)\
 > go (public & non-static)\
 > dropA (public & non-static)\
-> explorerIsOnA (public & non-static)\
+> explorerIsOnA (public & non-static)
 ### Vector (Private Class Within Maze)
 ##### Fields
 > rank (private & non-static)\
-> file (private & non-static)\
+> file (private & non-static)
 ##### Methods
 > add (private & non-static)\
-> equals (private & non-static)\
+> equals (private & non-static)
 ### UserOfMaze
 ##### Fields
-> displayer (private & static)\
+> displayer (private & static)
 ##### Methods
 > main (public & static)\
 > moveTest (private & static)\
 > dropTest (private & static)\
 > copyConstructTest (private & static)\
 > displayerTest (private & static)\
-> snapshotDemo (private & static)\
+> snapshotDemo (private & static)
 ### MazeSolver
 ##### Fields
 ##### Methods
-> solve (public & static)\
+> solve (public & static)
 ### UserOfMazeSolver
 ##### Fields
 ##### Methods
 > main (public & static)\
-> baseTest (private & static)\
+> baseTest (private & static)
 
 ## known bugs
 the displayer does not work
