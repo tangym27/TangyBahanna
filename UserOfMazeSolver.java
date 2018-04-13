@@ -20,9 +20,11 @@ public class UserOfMazeSolver {
     /**
       run one test
       base case for treasure: 
-      java UserOfMazeSolver mazes/justTreasure.txt 0 0
+      java UserOfMazeSolver mazes/justTreasure.txt 0 0 30
       base case for wall:
-      java UserOfMazeSolver mazes/justWall.txt 0 0
+      java UserOfMazeSolver mazes/justWall.txt 0 0 30 
+      bigger cases: 
+      java UserOfMazeSolver mazes/big.txt 0 6 30
      */
     private static void baseTest (Maze maze, int displayLength){
       MazeSolver.display(displayLength);
