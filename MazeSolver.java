@@ -29,7 +29,8 @@ public class MazeSolver {
             displayerTest(maze);
             if (!solve(maze)){													//          if the maze cannot be solved 
               																					// (via an invocation of the recursive abtraction)
-              maze= new Maze(snapshot);									//            move e back (go back to snapshot)
+              maze= new Maze(snapshot);
+              displayerTest(maze);											//            move e back (go back to snapshot)
             }
             else return true;														//          (if the maze can be solved)           
           																							//					return true :)
