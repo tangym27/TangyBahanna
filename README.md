@@ -90,10 +90,9 @@ null
 > baseTest (private & static)
 
 ## known bugs
-The displayer does display the explorer, but the explorer is sometimes missing or in the wrong place on step 0.
-The displayer also does not correctly display the recursive backtracking.
-The displayer also does not display when one of the base cases is satisfied.
-
+### Displayer
+If the person gives drops the explorer in a place that is not in the puzzle, then there is no display
+When backtracking, after the first step, the displayer shows the stepping stone as a wall.
 ## version n wishlist
 - one possible way
 - all possible ways
