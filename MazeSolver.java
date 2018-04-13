@@ -26,7 +26,7 @@ public class MazeSolver {
         Maze snapshot = new Maze( maze);								//       take a snapshot
         for (int direction : directions) {							//       For each possible direction
             maze.go(direction);													//          Move e in the direction
-            displayerTest(maze);
+            //displayerTest(maze);
             if (!solve(maze)){													//          if the maze cannot be solved 
               																					// (via an invocation of the recursive abtraction)
               maze= new Maze(snapshot);
