@@ -79,9 +79,12 @@ To aid with clarity, each name is accompanied with
 > snapshotDemo (private & static)
 ### MazeSolver
 ##### Fields
-null
+> displayer (private & static)\
+> step (private & static)\
+> directions (private & static)
 ##### Methods
-> solve (public & static)
+> solve (public & static)\
+> displayerTest(private & static)\
 ### UserOfMazeSolver
 ##### Fields
 null
