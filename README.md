@@ -91,7 +91,7 @@ null
 
 ## known bugs
 ### Displayer
-If the person gives drops the explorer in a place that is not in the puzzle, then there is no display
+If the person gives drops the explorer in a place that is not in the puzzle, then there is no display. In addition, the explorer disappears when it is not on the maze
 When backtracking, after the first step, the displayer shows the stepping stone as a wall.
 ## version n wishlist
 - one possible way
