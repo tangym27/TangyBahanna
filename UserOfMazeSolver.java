@@ -6,15 +6,15 @@
 * 2. big recursive case 
 */ 
 public class UserOfMazeSolver { 
-	private static Displayer displayer;
-  public static void main( String[] commandLine) 
+  
+	public static void main( String[] commandLine) 
 	throws java.io.FileNotFoundException {
   	Maze maze = new Maze( commandLine[0]
-                            , Integer.parseInt( commandLine[1]) // explorer positions
-                            , Integer.parseInt( commandLine[2]) // explorer positions
+                            , Integer.parseInt( commandLine[1]) // explorer rank 
+                            , Integer.parseInt( commandLine[2]) // explorer file
                             );
-    int displayLength =  Integer.parseInt(commandLine[3]);
-    baseTest(maze, displayLength);
+    	int displayLength =  Integer.parseInt(commandLine[3]);
+   	baseTest(maze, displayLength);
   }
 
     /**
@@ -30,6 +30,4 @@ public class UserOfMazeSolver {
       MazeSolver.display(displayLength);
       System.out.println(MazeSolver.solve(maze));
     }
-    
- 
 }
