@@ -90,7 +90,9 @@ null
 > baseTest (private & static)
 
 ## known bugs
-the displayer does not work
+The displayer does display the explorer, but the explorer is sometimes missing on in the wrong place on step 0.
+The displayer also does not correctly display the recursive backtracking.
+The displayer also does not display when one of the base cases is satisfied.
 
 ## version n wishlist
 - one possible way
