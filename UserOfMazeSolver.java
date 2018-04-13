@@ -6,16 +6,17 @@
 * 2. big recursive case 
 */ 
 public class UserOfMazeSolver { 
-
-    public static void main( String[] commandLine) 
-	 throws java.io.FileNotFoundException {
-        Maze maze = new Maze( commandLine[0]
+	private static Displayer displayer;
+  public static void main( String[] commandLine) 
+	throws java.io.FileNotFoundException {
+  	Maze maze = new Maze( commandLine[0]
                             , Integer.parseInt( commandLine[1]) // explorer positions
                             , Integer.parseInt( commandLine[2]) // explorer positions
                             );
-      	baseTest(maze);
-    }
-    
+    int displayLength =  Integer.parseInt(commandLine[3]);
+    baseTest(maze, displayLength);
+  }
+
     /**
       run one test
       base case for treasure: 
@@ -23,7 +24,11 @@ public class UserOfMazeSolver {
       base case for wall:
       java UserOfMazeSolver mazes/justWall.txt 0 0
      */
-    private static void baseTest (Maze maze){
+    private static void baseTest (Maze maze, int displayLength){
+      MazeSolver.display(displayLength);
       System.out.println(MazeSolver.solve(maze));
     }
+    
+ 
 }
+
