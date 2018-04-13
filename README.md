@@ -94,10 +94,10 @@ null
 
 ## known bugs
 ### Displayer
-If the person gives drops the explorer in a place that is not in the puzzle, then there is no display. It will just return false. In addition, the explorer disappears when it is on a boundary. When backtracking, after the first step, the displayer shows the stepping stone as a wall.
+If the person gives drops the explorer in a place that is not in the puzzle, then there is no display. It will just return false. In addition, the explorer disappears when it is on a boundary.\
+When backtracking, after the first step, the displayer shows the stepping stone as a wall. (somewhat of a bug)
 ## version n wishlist
 - one possible way
 - all possible ways
 - shortest path 
-- visualize the path  
 
