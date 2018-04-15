@@ -26,13 +26,16 @@ public class MazeSolver {
     public static boolean solve(Maze maze) {
       displayerTest(maze);
       if ( maze.explorerIsOnA() == Maze.TREASURE) {  		//If e is on treasure
-        return true;						//   Return true
+	  return true;						//   Return true
       }
-      else if ( maze.explorerIsOnA() == Maze.WALL) {		//Else if e is on a wall
-        return false;						//      Return false 
-      } 	
+      else if ( maze.explorerIsOnA() == Maze.WALL) {		//Else if e is on a wall 
+	  return false;                                         //   Return false
+      }
+      else if (maze.explorerIsOnA() == Maze.STEPPED){
+	  return false;
+      }	
       else { 							//Else
-        maze.dropA(Maze.WALL);					//       Drop wall
+        maze.dropA(Maze.STEPPED);			       	//       Drop wall
         Maze snapshot = new Maze( maze);			//       take a snapshot
         for (int direction : directions) {			//       For each possible direction
             maze.go(direction);					//          Move e in the direction
@@ -41,7 +44,8 @@ public class MazeSolver {
               maze= new Maze(snapshot);				//            move e back (go back to snapshot)
               displayerTest(maze);
             }
-            else return true;					//          (if the maze can be solved)            																							//					return true :)
+            else return true;					//          (if the maze can be solved)
+	                                                        //		return true :)
         }
         return false;						//   	 return false
     	}
