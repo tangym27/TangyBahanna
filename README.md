@@ -4,6 +4,9 @@
 Michelle Tang\
 Hanna Yang
 
+## currently on v1
+After the explorer steps on a stepping stone, it will be replaced by a "+".
+
 ## statement of problem
 what is the Boolean value of the statement “it is possible to get from the starting
 position to treasure?”
@@ -95,10 +98,9 @@ null
 ## known bugs
 ### Displayer
 If the person gives drops the explorer in a place that is not in the puzzle, then there is no display. It will just return false. In addition, the explorer disappears when it is on a boundary.\
-When backtracking, after the first step, the displayer shows the stepping stone as a wall. (somewhat of a bug)
+Sometimes, the displayer has strange spacing, so it doesn't always line up on the terminal window after each step.
 ## version n wishlist
 - eliminate the need for the user to input a number that will determine the height
-- maintain image of maze as explorer runs through it
 - one possible way
 - all possible ways
 - shortest path 
