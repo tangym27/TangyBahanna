@@ -5,7 +5,7 @@ Michelle Tang\
 Hanna Yang
 
 ## currently on v1
-After the explorer steps on a stepping stone, it will be replaced by a "+".
+After the explorer steps on a stepping stone, it will be replaced by a "+". This allows for the path the exploere takes to be seen.
 
 ## statement of problem
 what is the Boolean value of the statement “it is possible to get from the starting
